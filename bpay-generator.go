@@ -17,12 +17,10 @@ func reverse(s string) string {
 }
 
 func GenerateMOD10V1(input string) string {
-
 	reverseString := reverse(input)
-	revstrLen := len(reverseString)
 	subtotal := 0
 	total := 0
-	for i := 0; i < revstrLen; i++ {
+	for i := 0; i < len(reverseString); i++ {
 		multiplier := 1
 		if i%2 == 0 {
 			multiplier = 2
@@ -39,8 +37,7 @@ func GenerateMOD10V1(input string) string {
 	}
 
 	checkDigit := (10 - (total % 10)) % 10
-	crn := fmt.Sprintf("%s%d", strings.TrimSpace(input), checkDigit)
-	return crn
+	return fmt.Sprintf("%s%d", strings.TrimSpace(input), checkDigit)
 }
 
 func GenerateMOD10V5(input string) string {
