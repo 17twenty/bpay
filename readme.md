@@ -46,4 +46,4 @@ Feature requests/PRs welcome.
 
 ## See Also
 
-Originally based on a [StackOverflow answer](https://github.com/fontis/bpay-ref-generator)
+Originally based on a [StackOverflow answer](http://stackoverflow.com/a/11605561/747834)
