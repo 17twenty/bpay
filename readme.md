@@ -2,6 +2,8 @@
 
 Golang implementation of a [BPAY Generator written in PHP](https://github.com/fontis/bpay-ref-generator)
 
+Features generators for MOD10v1 and MOD10v5 as well as a `ValidateLuhn` function to ensure a valid Mod10 check digit/Luhn checksum.
+
 ## Background
 
 BPAY has become a really easy way to receive payments in Australia so this helps generate the BPAY values in a compliant form.
